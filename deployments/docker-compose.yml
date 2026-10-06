@@ -1,0 +1,10 @@
+services:
+  training:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: llm-training
+    volumes:
+      - ../artifacts:/app/artifacts
+    command: python scripts/train.py
+
