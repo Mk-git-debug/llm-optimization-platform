@@ -33,7 +33,15 @@ MANIFEST
 *.spec
 
 # Installer logs
-pip-log.txt
+.venv/
+__pycache__/
+*.pyc
+
+artifacts/*
+!artifacts/.gitkeep
+
+data/raw/*
+data/processed/*pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
@@ -218,3 +226,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environment
+.venv/
+
+# ML artifacts
+artifacts/*
+!artifacts/.gitkeep
+
+# Local datasets
+data/raw/*
+data/processed/*
